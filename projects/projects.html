@@ -4,57 +4,151 @@
 		<TITLE>
 			Drew's Projects
 		</TITLE>
-		<meta name="description" content="The basic concepts behind semiconductor materials and semiconductor devices. On this page, Britney explains the density of states function in bulk semiconductors, quantum wells, quantum wiresand quantum dots. ">
-		<meta name="keywords" content="semiconductors, physics, photonics, quantum well, lasers, optoelectronics, bands, energy gap, forbidden gap, electrons, holes, intrinsic, extrinsic, donnors, acceptors, valence, conduction, fermi, level, parabolic, bandstructure, gaas, silicon, si, density, states, occupation, quantum wire, quantum, well, quantum, dot, k, space">
-		<link rel="stylesheet" href="../../bsstylesheet.css" type="text/css">
 	</HEAD>
 	<BODY bgcolor="#FaFaFa" text="#000000" background="../../images/bcksemiconductor.gif">
 		<table width="640" align="center">
 			<tr>
 				<td>
-					<h1 class="long" font="Garamond">
+					<h1 class="long" font="Garamond" align="center">
 						Projects
 					</h1>
+					<P ALIGN="JUSTIFY">
+						This page outlines a list of projects, some funded and unfunded, which I am either working on actively or have completed.
+					</P>
+					
 					<h2 class="long" font="Garamond">
-						Fast and Accurate Interatomic Potentials.
+						Normal Mode Dynamics.
+					</h2>
+					
+					<figure> 
+						<img src="acoustic2.gif" class="illustration" align="center" width=500 height=400> 
+						<figcaption align="center"> One of the many vibrational modes in a diamond crystal. Atoms are represented as spheres. </figcaption>
+					</figure>
+					
+					
+					<P ALIGN="JUSTIFY">
+						The vibrational motion of atoms in a rigid body is a superposition of the normal vibrational modes, also known as phonons. These modes
+						interact with each other due to anharmonicity, thus giving rise to various phenomena such as thermal transport and phase changes. Other particles, 
+						such as photons or electrons, can also couple and interact with these modes, resulting in various forms of energy transfer and conversion. It is unknown, however, 
+						how to model or predict interactions between vibrational modes, and how these interactions give rise to various phenomena that we witness every day.
+					</P>
+					
+					<P ALIGN="JUSTIFY">
+						I develop mathematical theories and methods to simulate interactions between modes, and to determine how these interactions influence bulk material properties.
+					</P>
+					
+					<h2 class="long" font="Garamond">
+						Heat Exchanger Techno-economic Analyses.
+					</h2>
+					
+					<figure> 
+						<img src="tooling_investment.png" class="illustration" align="center" width=600 height=300> 
+						<figcaption align="center"> Tooling cost of a manufactured product as a function of the annual production volume.</figcaption>
+					</figure>
+					
+					<P ALIGN="JUSTIFY">
+						Heat exchangers are a vital part of powerplants which give society the energy it needs, at a viable cost. Design of more efficient heat exchangers is therefore
+						paramount to reducing energy costs and more effective utilization of energy resources. A major component of heat exchanger design, and any energy system design 
+						for that matter, is the economic component. A techno-economic analysis reveals whether or not a proposed technology is worth making, and includes details such as
+						manufacturing (tooling, fabrication, energy usage, etc.), transportation, and material costs. All of these variables combine into a techno-economic model to determine
+						the financial viability of a new product.
+					</P>
+					
+					<h2 class="long" font="Garamond">
+						High Thermal Conductivity Nonmetallic Composites.
+					</h2>
+					
+					<figure> 
+						<img src="high_tc_composite_comparison.png" class="illustration" align="center" width=700 height=300> 
+						<figcaption align="center"> An infrared heat transfer comparison of a typical plastic electronic device case (on the left) and our composite (on the right). You can see how 
+						our composite distributes more heat from the hot spot.</figcaption>
+					</figure>
+					
+					<P ALIGN="JUSTIFY">
+						Modern electronic devices, such as cell phones, tablets, and laptops are decreasing in size and increasing in power due to consumer interest and technological requirements. 
+						With this decrease in size and increase in power comes higher heat fluxes, higher energy densities, and ultimately higher device temperatures. The implications of this range
+						from uncomfortableness to catching fire. 
+					</P>
+					<P ALIGN="JUSTIFY">
+						It is therefore of interest to create materials with high thermal conductivity that can dissipate heat in these devices. However, you can't just enclose most devices in metallic casing 
+						to dissipate the heat because this would interfere with electromagnetic signaling (i.e., a Faraday cage). We therefore seek nonmetallic high thermal conductivity materials 
+						that are cheap and effective at dissipating heat. 
+					</P>
+					
+					<!-- -->
+				
+					<h2 class="long" font="Garamond">
+						Phonon Optimized Potentials (Pops) Program.
 					</h2>
 					<figure> 
-						<img src="stable.gif" class="illustration" align="right"> 
+						<img src="stable.gif" class="illustration" align="center" width=400 height=400> 
 						<figcaption align="center"> A molecular dynamics (MD) simulation, showing the motion of atoms in a silicon crystal.</figcaption>
 						<!--<p>A molecular dynamics simulation</p>-->
 					</figure>
 		
 					<P ALIGN="JUSTIFY">
-						Problem: All objects are made of atoms - us, the technology we use every day, all forms of nature, etc.
-						The behavior of atoms therefore influences all of these important things, and we could predict
-						or design the behavior of matter if we could model the dynamics of its underlying constituents
-						 - the atoms. One of my main research thrusts is therefore centered around accurately modelling
-						 atomic motions using molecular dynamics (MD) simulations.
+						Atoms are always jiggling around, due to their interaction with each other and external forces. These vibrations 
+						influence material properties, heat transfer, phase changes, and biological phenomena. If we 
+						could simulate atomic vibrations accurately, we could observe their contributions to various phenomena, thus gaining scientific 
+						understanding and engineerring insight on how to influence vibrations to yield desireable outcomes. However, traditional models 
+						of interactions between atoms yield inaccurate vibrational behavior, and therefore inaccurate predictions.
+					</P>
 					
 					<P ALIGN="JUSTIFY">
-						Solution: The cause of atomic motions, however, is due to the interatomic potential - the interaction energy
-						that atoms exert on each other. I model the interatomic potential by using machine learning to 
-						reproduce accurate quantum mechanical calculations.
+						I use machine learning and artificial intelligence to create and optimize analytical functions that predict accurate
+						quantum mechanical forces, and therefore accurate atomic dynamics and vibrations. I've verified the accuracy of my models by
+						using them to calculate accurate vibrational and thermal properties of solids. This is all packaged into my open-source Pops program,
+						which couples to the LAMMPS software made by Sandia National Labs.
 					</P>
 					
 					<h2 class="long" font="Garamond">
-						Phonon Transport.
+						Easy Modular Molecular Mechanics (EM3) Program.
 					</h2>
 					
+					<figure> 
+						<img src="argon.png" class="illustration" align="center" width=600 height=200> 
+						<figcaption align="center"> Visualization of an argon crystal melting at 158 K using my EM3 program, at different nanosecond (ns) time periods. 
+						I verified the accuracy of the dynamics by calculating the diffusion coefficient of liquid argon.</figcaption>
+					</figure>
+					
+					<P ALIGN="JUSTIFY">
+						A plethora of powerful open-source atomistic simulation programs are available to
+						the public, including LAMMPS, GROMACS, and many others. With the current
+						availability of powerful atomistic simulation programs, the development of another might
+						seem futile. EM3, however, possesses a goal that separates it from the rest of the currently
+						available programs. Unlike existing programs possessing goals centered around simulation
+						performance, the goal of EM3 is more educational and simplistic. The educational goal
+						centers around the simple (easy) objective-oriented (modular) C++ source code of EM3,
+						which aside from being powerful and efficient, seeks to bridge the gap between less
+						powerful but easily understood MATLAB and Python codes scattered about the internet
+						and more powerful but complicated larger programs like LAMMPS and GROMACS (also
+						written in C++ and C, respectively). This educational goal is readily realized by considering
+						the seemingly lack of intensive developer guides for existing programs; this issue may
+						hinder a new researcher, such as a student beginning work in atomistic simulations, from
+						transcending the role of a simple user to a developer, thus gaining the ability to perform
+						more meaningful work. A commonality across the commonly used MD programs is that
+						they are object-oriented; this is a necessary component when developing extendable opensource programs that can readily be modified by any user. Newcomers to the field may
+						find that there is much to learn in terms of object-oriented programming and its relation to
+						organizing a proper MD code. This is where EM3 comes in; it provides a framework for 
+						modularly organized atomistic simulation codes, and its open-source availability allows
+						beginners to familiarize themselves with the type of application of object-oriented C++ that
+						is seen in larger and more powerful programs such as LAMMPS. EM3 strives to be a
+						“light” (easy) version of the larger MD programs like LAMMPS and GROMACS, without
+						sacrificing computational power since it is written in the powerful C++ language and
+						supports parallel compilation with MPI. While parallelized MD is not yet implemented,
+						the EM3 source code includes MPI headers and initializers and is compiled using MPI, so
+						that future work can result in parallelization. 
+					</P>
+					
 					<h2 class="long" font="Garamond">
-						Heat Exchanger Economic Modelling.
+						Modular Artificial Neural Network Trainer (Modulant) Program.
 					</h2>
-					<h2 class="long" font="Garamond">
-						High Thermal Conductivity Nonmetallic Composites.
-					</h2>
+					
 					<h2 class="long" font="Garamond">
 						Biomaterial Peptide Structure.
 					</h2>
 					<h2 class="long" font="Garamond">
 						Ion Effects on Cytochrome c Structure
-					</h2>
-					<h2 class="long" font="Garamond">
-						Easy Modular Molecular Mechanics
 					</h2>
 
 				</td>
