@@ -30,7 +30,7 @@
 						Fast & accurate interatomic potentials.
 					</h2>
 					<figure> 
-						<img src="stable.gif" class="illustration" align="center" width=400 height=400> 
+						<img src="phonon-potential.png" class="illustration" align="center" width=400 height=400> 
 						<figcaption align="center"> A molecular dynamics (MD) simulation, showing the motion of atoms in a silicon crystal.</figcaption>
 						<!--<p>A molecular dynamics simulation</p>-->
 					</figure>
@@ -44,10 +44,7 @@
 					</P>
 					
 					<P ALIGN="JUSTIFY">
-						I use machine learning and artificial intelligence to create and optimize analytical functions that predict accurate
-						quantum mechanical forces, and therefore accurate atomic dynamics and vibrations. I've verified the accuracy of my models by
-						using them to calculate accurate vibrational and thermal properties of solids. This is all packaged into my open-source Pops program,
-						which couples to the LAMMPS software made by Sandia National Labs.
+						I found a convenient way to decouple large harmonic forces, which are easily modeled with a Taylor expansion, from the complicated anharmonic forces which are best modeled with machine learned potentials. The resulting combined functional form is termed the "phonon potential" and has the best agreement with experimental thermal properties compared to any other potential, while being orders of magnitude faster.
 					</P>					
 					
 					
