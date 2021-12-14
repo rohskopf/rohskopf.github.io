@@ -13,8 +13,83 @@
 						Projects
 					</h1>
 					<P ALIGN="JUSTIFY">
-						This page outlines a list of projects, some funded and unfunded, which I am either working on actively or have completed.
+						This page outlines a list of projects which I am either working on actively or have completed.
 					</P>
+					
+					
+					<h2 class="long" font="Garamond">
+						Simulating molecular vibrational energy transfer.
+					</h2>
+					
+					<figure> 
+						<img src="mode_decomposition.gif" class="illustration" align="center" width=1200 height=300> 
+						<figcaption align="left"> The random vibration of atoms (black circles) is decomposed into different fundamental vibrations called "phonons". </figcaption>
+					</figure>
+					
+					<h2 class="long" font="Garamond">
+						Fast & accurate interatomic potentials.
+					</h2>
+					<figure> 
+						<img src="stable.gif" class="illustration" align="center" width=400 height=400> 
+						<figcaption align="center"> A molecular dynamics (MD) simulation, showing the motion of atoms in a silicon crystal.</figcaption>
+						<!--<p>A molecular dynamics simulation</p>-->
+					</figure>
+		
+					<P ALIGN="JUSTIFY">
+						Atoms are always jiggling around, due to their interaction with each other and external forces. These vibrations 
+						influence material properties, heat transfer, phase changes, and biological phenomena. If we 
+						could simulate atomic vibrations accurately, we could observe their contributions to various phenomena, thus gaining scientific 
+						understanding and engineerring insight on how to influence vibrations to yield desireable outcomes. However, traditional models 
+						of interactions between atoms yield inaccurate vibrational behavior, and therefore inaccurate predictions.
+					</P>
+					
+					<P ALIGN="JUSTIFY">
+						I use machine learning and artificial intelligence to create and optimize analytical functions that predict accurate
+						quantum mechanical forces, and therefore accurate atomic dynamics and vibrations. I've verified the accuracy of my models by
+						using them to calculate accurate vibrational and thermal properties of solids. This is all packaged into my open-source Pops program,
+						which couples to the LAMMPS software made by Sandia National Labs.
+					</P>					
+					
+					
+					
+					
+					
+					
+					<P ALIGN="JUSTIFY">
+						Molecular motion is composed of collective motions of atoms vibrating at certain frequencies, also known as phonons. Phonons are responsible for various phenomena such as heat transfer, phase changes, and chemical reactions. Other particles, 
+						such as photons or electrons, can also interact with vibrations, resulting in various forms of energy transfer and conversion (e.g., electricity to heat). Vibrations can also interact with each other, resulting energy dissipation. It is unknown how vibrations interact, and how these interactions influence chemical and material behavior. To simulate this behavior for large-scale (1,000-10,000 atom) systems, I developed ModeCode which extracts vibrational modes massively in parallel and simulates their interactions in LAMMPS.
+					</P>
+
+
+					<h2 class="long" font="Garamond">
+						Interfacial Heat Transfer.
+					</h2>
+					
+					<figure> 
+						<img src="extended_mode.gif" class="illustration" align="center" width=1500 height=200> 
+						<figcaption align="center"> A vibrational mode involving atoms of a silicon (red) and germanium (blue) interface.</figcaption>
+					</figure>
+					
+					<P ALIGN="JUSTIFY">
+						Intefaces are present in many solid-state devices, where they present a resistance to heat conduction. Optimizing the thermal resistance of such interfaces is therefore crucial to improving the performance of many devices.
+					</P>
+
+
+					<h2 class="long" font="Garamond">
+						Mass Diffusion.
+					</h2>
+					
+					<figure> 
+						<img src="2d_diffusion.gif" class="illustration" align="center" width=300 height=400> 
+						<figcaption align="left"> A hydrogen atom (blue) diffusing through a palladium lattice (red). This situation arises in hydrogen energy storage.</figcaption>
+					</figure>
+					
+					<P ALIGN="JUSTIFY">
+						Mass diffusion is a crucial phenomenon in materials processing and energy storage/conversion.  A molecular-level understanding of how atoms diffuse through materials is therefore crucial to engineer desirable diffusion properties. How can the vibrational modes which influence diffusion be probed or excited experimentally?
+					</P>
+
+					
+					
 					
 					<h2 class="long" font="Garamond">
 						High Thermal Conductivity Nonmetallic Composites.
@@ -48,51 +123,7 @@
 					
 					<P ALIGN="JUSTIFY">
 						Powerplants contain many areas where useful energy, usually in the form of heat, is lost to the environment. There are therefore many engineering parameters which may be changed to avoid such losses, although it is a challenging task to optimize efficiency while remaining within viable engineering constraints.
-					</P>
-					
-					<h2 class="long" font="Garamond">
-						Phonon Dynamics.
-					</h2>
-					
-					<figure> 
-						<img src="mode_decomposition.gif" class="illustration" align="center" width=1200 height=300> 
-						<figcaption align="left"> The random vibration of atoms (black circles) is decomposed into different fundamental vibrations called "phonons". </figcaption>
-					</figure>
-					
-					
-					<P ALIGN="JUSTIFY">
-						Atomic vibrations, also known as phonons, are responsible for various phenomena such as heat transfer, phase changes, and chemical reactions. Other particles, 
-						such as photons or electrons, can also interact with vibrations, resulting in various forms of energy transfer and conversion (e.g., electricity to heat). Vibrations can also interact with each other, resulting energy dissipation. It is unknown how vibrations interact, and how these interactions influence chemical and material behavior.
-					</P>
-
-
-					<h2 class="long" font="Garamond">
-						Interfacial Heat Transfer.
-					</h2>
-					
-					<figure> 
-						<img src="extended_mode.gif" class="illustration" align="center" width=1500 height=200> 
-						<figcaption align="center"> A vibrational mode involving atoms of a silicon (red) and germanium (blue) interface.</figcaption>
-					</figure>
-					
-					<P ALIGN="JUSTIFY">
-						Intefaces are present in many solid-state devices, where they present a resistance to heat conduction. Optimizing the thermal resistance of such interfaces is therefore crucial to improving the performance of many devices.
-					</P>
-
-
-					<h2 class="long" font="Garamond">
-						Mass Diffusion.
-					</h2>
-					
-					<figure> 
-						<img src="2d_diffusion.gif" class="illustration" align="center" width=300 height=400> 
-						<figcaption align="left"> A hydrogen atom (blue) diffusing through a palladium lattice (red). This situation arises in hydrogen energy storage.</figcaption>
-					</figure>
-					
-					<P ALIGN="JUSTIFY">
-						Mass diffusion is a crucial phenomenon in materials processing and energy storage/conversion.  A molecular-level understanding of how atoms diffuse through materials is therefore crucial to engineer desirable diffusion properties. How can the vibrational modes which influence diffusion be probed or excited experimentally?
-					</P>
-
+					</P>					
 
 					
 					<h2 class="long" font="Garamond">
@@ -114,29 +145,6 @@
 										
 					<!-- -->
 				
-					<h2 class="long" font="Garamond">
-						Phonon Optimized Potentials (Pops) Program.
-					</h2>
-					<figure> 
-						<img src="stable.gif" class="illustration" align="center" width=400 height=400> 
-						<figcaption align="center"> A molecular dynamics (MD) simulation, showing the motion of atoms in a silicon crystal.</figcaption>
-						<!--<p>A molecular dynamics simulation</p>-->
-					</figure>
-		
-					<P ALIGN="JUSTIFY">
-						Atoms are always jiggling around, due to their interaction with each other and external forces. These vibrations 
-						influence material properties, heat transfer, phase changes, and biological phenomena. If we 
-						could simulate atomic vibrations accurately, we could observe their contributions to various phenomena, thus gaining scientific 
-						understanding and engineerring insight on how to influence vibrations to yield desireable outcomes. However, traditional models 
-						of interactions between atoms yield inaccurate vibrational behavior, and therefore inaccurate predictions.
-					</P>
-					
-					<P ALIGN="JUSTIFY">
-						I use machine learning and artificial intelligence to create and optimize analytical functions that predict accurate
-						quantum mechanical forces, and therefore accurate atomic dynamics and vibrations. I've verified the accuracy of my models by
-						using them to calculate accurate vibrational and thermal properties of solids. This is all packaged into my open-source Pops program,
-						which couples to the LAMMPS software made by Sandia National Labs.
-					</P>
 
 					<h2 class="long" font="Garamond">
 						Large-scale Modular Optimizer Program
